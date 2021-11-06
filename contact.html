@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="contact.js"></script>
+</head>
+<nav>
+    <ul>
+        <li>
+            <a href="index.html">
+                <i class="fa fa-home"></i>
+                Home
+            </a>    
+        </li>
+        <li>
+            <a href="interests.html">
+                <i class="fa fa-heart"></i>
+                Interests
+            </a>
+        </li>
+        <li>
+            <a href="projects.html">
+                <i class="fa fa-briefcase"></i>
+                Projects
+            </a>
+        </li>
+        <li>
+            <a href="blog.html">
+                <i class="fa fa-book"></i>
+                Blog
+            </a>
+        </li>
+        <li>
+            <a href="contact.html" class="active">
+                <i class="fa fa-comment"></i>
+                Contact
+            </a>
+        </li>
+       
+    </ul>
+</nav>
+
+
+    <h1>Contacts</h1>
+    <div class="contactCard">
+        <form id="contactForm">
+            <label for="">First Name</label>
+            <input type="text" id="firstName" required>
+            <label for="">Last Name</label>
+            <input type="text" name="" id="lastName" required>
+            <label for="">Country</label>
+            <select name="" id="country" required>
+                <option value="USA">USA</option>
+                <option value="Canada">Canada</option>
+                <option value="United Kingdom">United Kingdom</option>
+            </select>
+            <label for="">Subject</label>
+            <textarea required name="" id="subject" cols="30" rows="10" placeholder="Leave a message..."></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <div id="snackbar">Some text some message..</div>
+</html>
